@@ -24,8 +24,8 @@ namespace ComponentRemover
                 var list = Slot.GetComponentsInChildren<LogixReference>();
                 list.ForEach(lRef => lRef.Destroy(sendDestroyingEvent: true));
              }
+             
             HasRun.Value = true;
-
         }
     }
 }
